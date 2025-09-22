@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Niyantri Cafe - Contact</title>
+  <meta name='description' content='Get in touch with Niyantri Cafe. We welcome comments, reservations, and collaboration inquiries.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased'>
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-label='Top'>
+      <div class='flex items-center justify-between h-16'>
+        <div class='flex items-center'>
+          <a href='index.html' class='text-2xl font-bold text-emerald-700'>Niyantri Cafe</a>
+        </div>
+        <div class='hidden md:flex space-x-8'>
+          <a href='index.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Our Story</a>
+          <a href='menu.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Menu</a>
+          <a href='contact.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-gray-700 hover:text-gray-900 focus:outline-none' aria-label='Open Menu'>
+            <svg class='h-6 w-6' viewBox='0 0 24 24' fill='none' stroke='currentColor' aria-hidden='true'>
+              <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id='mobile-menu' class='md:hidden hidden px-4 pb-4'>
+      <a href='index.html' class='block py-2 text-sm text-gray-700'>Home</a>
+      <a href='about.html' class='block py-2 text-sm text-gray-700'>Our Story</a>
+      <a href='menu.html' class='block py-2 text-sm text-gray-700'>Menu</a>
+      <a href='contact.html' class='block py-2 text-sm text-gray-700'>Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class='py-12'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h1 class='text-3xl font-bold mb-4'>Contact Us</h1>
+        <p class='text-gray-700 mb-6'>We'd love to hear from you. Reach out for reservations, partnerships, or questions about our rustic cafe.</p>
+        <div class='grid md:grid-cols-2 gap-8'>
+          <div class='bg-white p-6 rounded-lg shadow'>
+            <h2 class='text-xl font-semibold mb-2'>Our Location</h2>
+            <p class='text-gray-700'>123 Forest Lane, Willow Creek, CA</p>
+            <p class='text-gray-700'>Hours: Tue–Sun 8:00–6:00</p>
+            <p class='text-gray-700'>Phone: (555) 012-3456</p>
+            <p class='text-gray-700'>Email: contact@niyantricafe.example</p>
+            <img src='https://images.pexels.com/photos/33956379/pexels-photo-33956379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Map showing location' class='w-full mt-4 rounded' />
+          </div>
+          <div class='bg-white p-6 rounded-lg shadow'>
+            <h2 class='text-xl font-semibold mb-2'>Send Us a Message</h2>
+            <form id='contact-form' class='space-y-4' novalidate>
+              <div>
+                <label for='name' class='block text-sm font-medium text-gray-700'>Name</label>
+                <input id='name' name='name' type='text' required class='mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2' />
+              </div>
+              <div>
+                <label for='email' class='block text-sm font-medium text-gray-700'>Email</label>
+                <input id='email' name='email' type='email' required class='mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2' />
+              </div>
+              <div>
+                <label for='message' class='block text-sm font-medium text-gray-700'>Message</label>
+                <textarea id='message' name='message' rows='4' required class='mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2'></textarea>
+              </div>
+              <div id='form-feedback' class='text-sm'></div>
+              <button type='submit' class='bg-emerald-700 text-white px-4 py-2 rounded'>Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-800 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-8'>
+      <div class='flex flex-col md:flex-row md:justify-between md:items-center'>
+        <div class='mb-4 md:mb-0'>
+          <h4 class='text-lg font-semibold'>Niyantri Cafe</h4>
+          <p class='text-sm text-gray-300'>Rustic cafe open for reservations and inquiries.</p>
+        </div>
+        <nav class='flex space-x-4'>
+          <a href='index.html' class='text-gray-300 hover:text-white'>Home</a>
+          <a href='about.html' class='text-gray-300 hover:text-white'>Our Story</a>
+          <a href='menu.html' class='text-gray-300 hover:text-white'>Menu</a>
+          <a href='contact.html' class='text-gray-300 hover:text-white'>Contact</a>
+        </nav>
+      </div>
+      <hr class='border-gray-700 my-4'>
+      <p class='text-center text-xs text-gray-400'>&copy; 2025 Niyantri Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      const feedback = document.getElementById('form-feedback');
+      form?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        if (!name || !email || !message) {
+          feedback.textContent = 'Please fill in all fields.';
+          feedback.className = 'text-red-600';
+          return;
+        }
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+          feedback.textContent = 'Please enter a valid email address.';
+          feedback.className = 'text-red-600';
+          return;
+        }
+        feedback.textContent = 'Thank you! Your message has been received.';
+        feedback.className = 'text-green-600';
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
