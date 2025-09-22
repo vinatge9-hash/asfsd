@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Niyantri Cafe - Our Story</title>
+  <meta name='description' content='Learn the story behind Niyantri Cafe, our rustic philosophy, and our commitment to community and craft coffee.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased'>
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-label='Top'>
+      <div class='flex items-center justify-between h-16'>
+        <div class='flex items-center'>
+          <a href='index.html' class='text-2xl font-bold text-emerald-700'>Niyantri Cafe</a>
+        </div>
+        <div class='hidden md:flex space-x-8'>
+          <a href='index.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Our Story</a>
+          <a href='menu.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Menu</a>
+          <a href='contact.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-gray-700 hover:text-gray-900 focus:outline-none' aria-label='Open Menu'>
+            <svg class='h-6 w-6' viewBox='0 0 24 24' fill='none' stroke='currentColor' aria-hidden='true'>
+              <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id='mobile-menu' class='md:hidden hidden px-4 pb-4'>
+      <a href='index.html' class='block py-2 text-sm text-gray-700'>Home</a>
+      <a href='about.html' class='block py-2 text-sm text-gray-700'>Our Story</a>
+      <a href='menu.html' class='block py-2 text-sm text-gray-700'>Menu</a>
+      <a href='contact.html' class='block py-2 text-sm text-gray-700'>Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class='min-h-screen bg-gradient-to-br from-yellow-50 to-rose-50'>
+      <div class='max-w-7xl mx-auto px-4 py-20'>
+        <div class='grid md:grid-cols-2 gap-12 items-center'>
+          <div>
+            <h1 class='text-4xl md:text-5xl font-extrabold text-gray-900 mb-6'>Our Story</h1>
+            <p class='text-lg text-gray-700 mb-6'>Niyantri Cafe began as a simple dream: to create a cozy place where neighbors could gather over good coffee and homemade pastries, using locally sourced ingredients. Our rustic decor celebrates handmade craft and sustainable practices.</p>
+            <p class='text-gray-700'>From day one, our goal has been to nurture community. We partner with regional farmers, bakers, and artists to bring you seasonally inspired menus and supportive spaces for local creators to collaborate and connect.</p>
+          </div>
+          <div>
+            <img src='https://images.unsplash.com/photo-1620314893491-77fb3cf2e2b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxydXN0aWMlMjBjYWZlJTIwZ2F0aGVyaW5nJTIwd2l0aCUyMHdhcm0lMjBsaWdodGluZyUyMGFuZCUyMGNyYWZ0JTIwZGV0YWlsc3xlbnwwfDB8fHwxNzU4NTU4ODk2fDA&ixlib=rb-4.1.0&q=80&w=1080' alt='People gathering in a rustic cafe with warm lighting' class='w-full rounded-xl shadow-lg'>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='py-8 bg-gray-100'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <blockquote class='bg-white p-6 rounded-lg shadow'>
+          “Niyantri Cafe feels like a warm hug — the perfect place to slow down and savor a cup of coffee.”
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-800 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-8'>
+      <div class='flex flex-col md:flex-row md:justify-between md:items-center'>
+        <div class='mb-4 md:mb-0'>
+          <h4 class='text-lg font-semibold'>Niyantri Cafe</h4>
+          <p class='text-sm text-gray-300'>A rustic haven for coffee lovers and community builders.</p>
+        </div>
+        <nav class='flex space-x-4'>
+          <a href='index.html' class='text-gray-300 hover:text-white'>Home</a>
+          <a href='about.html' class='text-gray-300 hover:text-white'>Our Story</a>
+          <a href='menu.html' class='text-gray-300 hover:text-white'>Menu</a>
+          <a href='contact.html' class='text-gray-300 hover:text-white'>Contact</a>
+        </nav>
+      </div>
+      <hr class='border-gray-700 my-4'>
+      <p class='text-center text-xs text-gray-400'>&copy; 2025 Niyantri Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
