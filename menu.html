@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Niyantri Cafe - Menu</title>
+  <meta name='description' content='Rustic menu featuring coffee, tea, and pastries with detailed descriptions and prices.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased'>
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-label='Top'>
+      <div class='flex items-center justify-between h-16'>
+        <div class='flex items-center'>
+          <a href='index.html' class='text-2xl font-bold text-emerald-700'>Niyantri Cafe</a>
+        </div>
+        <div class='hidden md:flex space-x-8'>
+          <a href='index.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Our Story</a>
+          <a href='menu.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Menu</a>
+          <a href='contact.html' class='text-gray-700 hover:text-emerald-700 transition-all duration-300'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-gray-700 hover:text-gray-900 focus:outline-none' aria-label='Open Menu'>
+            <svg class='h-6 w-6' viewBox='0 0 24 24' fill='none' stroke='currentColor' aria-hidden='true'>
+              <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id='mobile-menu' class='md:hidden hidden px-4 pb-4'>
+      <a href='index.html' class='block py-2 text-sm text-gray-700'>Home</a>
+      <a href='about.html' class='block py-2 text-sm text-gray-700'>Our Story</a>
+      <a href='menu.html' class='block py-2 text-sm text-gray-700'>Menu</a>
+      <a href='contact.html' class='block py-2 text-sm text-gray-700'>Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class='py-12'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h1 class='text-3xl font-bold mb-4'>Our Menu</h1>
+        <p class='text-gray-700 mb-6'>Savor a rustic selection of coffee, teas, and pastries crafted daily. Prices reflect local sourcing and handmade quality.</p>
+
+        <!-- Coffee -->
+        <h2 class='text-2xl font-semibold my-4'>Coffee</h2>
+        <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://images.unsplash.com/photo-1666608531317-06858b2c92c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxlc3ByZXNzbyUyMGN1cCUyMG9uJTIwd29vZGVuJTIwdGFibGV8ZW58MHwwfHx8MTc1ODU1ODg5N3ww&ixlib=rb-4.1.0&q=80&w=1080' alt='Espresso shot with crema in a ceramic cup' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Espresso</h3>
+            <p class='text-gray-600'>A bold, concentrated shot with rich crema.</p>
+            <p class='font-semibold mt-2'>$3.50</p>
+          </article>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://images.pexels.com/photos/1419923/pexels-photo-1419923.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Americano in a cup with steam' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Americano</h3>
+            <p class='text-gray-600'>Smooth, elongated coffee with hot water for balance.</p>
+            <p class='font-semibold mt-2'>$4.00</p>
+          </article>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://images.pexels.com/photos/2112749/pexels-photo-2112749.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Cappuccino with latte art' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Cappuccino</h3>
+            <p class='text-gray-600'>Classic espresso, steamed milk, and foamy crown.</p>
+            <p class='font-semibold mt-2'>$4.50</p>
+          </article>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://pixabay.com/get/g475baabb8eb4d52b5c86a5d8bad2d87ac0675c4947edb8dd520979a793aa728dd47912d560426abac4045f38e3b47dd0058646c1d17529212eaea9ec0c034e5c_640.jpg' alt='Pumpkin Spice Latte in a mug' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Pumpkin Spice Latte (Seasonal)</h3>
+            <p class='text-gray-600'>Espresso with pumpkin spice, steamed milk, and a hint of sweetness.</p>
+            <p class='font-semibold mt-2'>$5.25</p>
+          </article>
+        </div>
+
+        <!-- Tea -->
+        <h2 class='text-2xl font-semibold my-4'>Tea</h2>
+        <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://pixabay.com/get/g751d722bc56df251658efb2b5e4c240e80b8b66580120768179783791da725d4d7c4098772ffc57c43189539cb06a5bc_640.jpg' alt='House black tea in a cup' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>House Black Tea</h3>
+            <p class='text-gray-600'>Full-bodied, comforting classic with a robust aroma.</p>
+            <p class='font-semibold mt-2'>$3.75</p>
+          </article>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://pixabay.com/get/g31632d8c077c6678b6b8baacbf96d1a3ab3de0d72041684f5151837e54444aabc857fd9f049d30ae1c8b833f38f4bbcc2a33f9d384fa64f0d6a1f36e04736077_640.jpg' alt='Green tea with citrus in a teacup' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Green Tea with Citrus</h3>
+            <p class='text-gray-600'>Bright, citrus-infused green tea for a refreshing lift.</p>
+            <p class='font-semibold mt-2'>$3.95</p>
+          </article>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://images.pexels.com/photos/17536089/pexels-photo-17536089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Chai latte with spice' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Chai Latte</h3>
+            <p class='text-gray-600'>Spiced tea with steamed milk and aromatics.</p>
+            <p class='font-semibold mt-2'>$4.25</p>
+          </article>
+        </div>
+
+        <!-- Pastries -->
+        <h2 class='text-2xl font-semibold my-4'>Pastries</h2>
+        <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://images.unsplash.com/photo-1713274788399-fe1aeaced159?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxidXR0ZXIlMjBjcm9pc3NhbnR8ZW58MHwwfHx8MTc1ODU1ODkwMnww&ixlib=rb-4.1.0&q=80&w=1080' alt='Butter croissant on a rustic plate' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Butter Croissant</h3>
+            <p class='text-gray-600'>Flaky, buttery layers with a delicate crumb.</p>
+            <p class='font-semibold mt-2'>$3.75</p>
+          </article>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://images.pexels.com/photos/90604/pexels-photo-90604.png?auto=compress&cs=tinysrgb&h=650&w=940' alt='Blueberry muffin on a wooden board' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Blueberry Muffin</h3>
+            <p class='text-gray-600'>Tender crumb with bursts of blueberry and a light glaze.</p>
+            <p class='font-semibold mt-2'>$3.95</p>
+          </article>
+          <article class='bg-white rounded-xl p-4 shadow hover:shadow-xl transition-all duration-300'>
+            <img src='https://pixabay.com/get/g71198a3b660b6289b57b0093dbecdbd4193419868a0630330e72e0c4e81a25f9bd3b4a4cb2a46c85bd6202a7f223ca62_640.jpg' alt='Almond Danish on a rustic plate' class='w-full h-40 object-cover rounded mb-2'>
+            <h3 class='font-semibold'>Almond Danish</h3>
+            <p class='text-gray-600'>Rich almond filling in a flaky, buttery pastry.</p>
+            <p class='font-semibold mt-2'>$4.25</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-800 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-8'>
+      <div class='flex flex-col md:flex-row md:justify-between md:items-center'>
+        <div class='mb-4 md:mb-0'>
+          <h4 class='text-lg font-semibold'>Niyantri Cafe</h4>
+          <p class='text-sm text-gray-300'>Rustic, craft-inspired menus for slow mornings and lingering conversations.</p>
+        </div>
+        <nav class='flex space-x-4'>
+          <a href='index.html' class='text-gray-300 hover:text-white'>Home</a>
+          <a href='about.html' class='text-gray-300 hover:text-white'>Our Story</a>
+          <a href='menu.html' class='text-gray-300 hover:text-white'>Menu</a>
+          <a href='contact.html' class='text-gray-300 hover:text-white'>Contact</a>
+        </nav>
+      </div>
+      <hr class='border-gray-700 my-4'>
+      <p class='text-center text-xs text-gray-400'>&copy; 2025 Niyantri Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
